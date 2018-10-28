@@ -1,0 +1,13 @@
+Package: StatonMisc
+Title: Common Functions Used by Staton
+Version: 0.0.0.9000
+Authors@R: person("Benjamin", "Staton", email = "statonbe@gmail.com", role = c("aut", "cre"))
+Description: This package contains a somewhat random assortment of functions
+    that are commonly used in code written by Ben Staton. It includes mostly
+    utility-type functions for transforming dates (from MM/DD/YYYY to DOY and back) and
+    basic data transformations (cv2sig, sig2cv, logis, expit, etc.).
+Depends: R (>= 3.5.0)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
