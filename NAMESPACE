@@ -3,5 +3,7 @@
 export(cv2sig)
 export(date2doy)
 export(doy2date)
+export(prettify)
 export(sig2cv)
+export(summ)
 export(which_closest)
