@@ -11,6 +11,8 @@
 #'
 #' @examples
 #' which_closest(x = 5:10, y = 7)
+#'
+#' @export
 
 which_closest = function(x, y) {
   which.min(abs(x - y))

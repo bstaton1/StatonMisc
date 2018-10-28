@@ -12,6 +12,8 @@
 #'
 #' @examples
 #' sig2cv(sig = 0.2)
+#'
+#' @export
 
 sig2cv = function(sig) {
   sqrt(exp(sig^2) - 1)

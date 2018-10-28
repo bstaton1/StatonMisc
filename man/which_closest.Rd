@@ -21,4 +21,5 @@ closest to \code{y}, regardless of if it is greater or less than \code{y}
 }
 \examples{
 which_closest(x = 5:10, y = 7)
+
 }

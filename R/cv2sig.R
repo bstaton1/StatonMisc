@@ -12,6 +12,8 @@
 #'
 #' @examples
 #' cv2sig(cv = 0.2)
+#'
+#' @export
 
 cv2sig = function(cv) {
   sqrt(log((cv^2) + 1))

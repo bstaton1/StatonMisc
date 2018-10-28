@@ -19,6 +19,7 @@ random variable to the lognormal standard deviation, using a simple transformati
 }
 \examples{
 cv2sig(cv = 0.2)
+
 }
 \seealso{
 \code{\link{sig2cv}}

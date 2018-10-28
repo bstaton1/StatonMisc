@@ -19,6 +19,7 @@ of a random variable to the coefficient of variation, using a simple transformat
 }
 \examples{
 sig2cv(sig = 0.2)
+
 }
 \seealso{
 \code{\link{cv2sig}}
