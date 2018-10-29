@@ -1,13 +1,13 @@
 #' Convert a decimal time to a nice-looking time
 #'
-#' Goes from hours.fraction to hours:minutes.
+#' Goes from hours.fraction format to hours:minutes.
 #'
-#' @param dec_times a numeric vector with length >= 1,
+#' @param dec_times A numeric vector with length >= 1,
 #'   and values in the interval [0,24].
-#' @param clock a character vector specifying if you want a 12-hour clock
-#'   (\code{"12hr"}) or a 24-hour clock(i.e., miliary time; \code{"24hr"})
+#' @param clock A character vector specifying if you want a 12-hour clock
+#'   (\code{"12hr"}) or a 24-hour clock(i.e., miliary time; \code{"24hr"}).
 #'
-#' @return a character vector with the converted times.
+#' @return A character vector with the converted times.
 #'   If \code{clock == "12hr"}, either \code{"AM"} or \code{"PM"}
 #'   will be included at the end of the character string in each element.
 #'

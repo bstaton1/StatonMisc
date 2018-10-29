@@ -7,15 +7,17 @@
 cv2sig(cv)
 }
 \arguments{
-\item{cv}{a numeric vector, possibly length > 1, containing the CV to convert}
+\item{cv}{a numeric vector, possibly length > 1,
+containing the CV to convert.}
 }
 \value{
 a numeric vector with the same length as \code{cv},
-  the lognormal standard deviation
+  the lognormal standard deviation.
 }
 \description{
 This function is used to convert the coefficient of variation of a
-random variable to the lognormal standard deviation, using a simple transformation
+random variable to the lognormal standard deviation,
+using a simple transformation.
 }
 \examples{
 cv2sig(cv = 0.2)

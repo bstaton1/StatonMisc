@@ -8,12 +8,12 @@ summ(x, p = c(0.5, 0.025, 0.975), rnd = NULL, na.rm = F,
   prettify = FALSE)
 }
 \arguments{
-\item{x}{a numeric vector with length > 1. It can have \code{NA} elements.}
+\item{x}{A numeric vector with length > 1. It can have \code{NA} elements.}
 
-\item{p}{numeric vector with elements on the interval (0,1).
-The quantile points requested. Defaults to \code{c(0.5, 0.025, 0.975)}}
+\item{p}{A numeric vector with elements on the interval (0,1).
+The quantile points requested. Defaults to \code{c(0.5, 0.025, 0.975)}.}
 
-\item{rnd}{a numeric vector of length == 1. The rounding specification.
+\item{rnd}{A numeric vector of length == 1. The rounding specification.
 Defaults to \code{NULL}, i.e., no rounding.}
 
 \item{na.rm}{logical. Do you wish to remove NAs before calculating summary statistics?
@@ -23,7 +23,7 @@ Defaults to \code{FALSE}.}
 it will be coerced to a character vector. Defaults to \code{FALSE}.}
 }
 \value{
-a vector with length depending on the requested quantiles.
+A vector with length depending on the requested quantiles.
   If \code{isTRUE(prettify)}, output will be a named character vector, otherwise,
   it will be a named numeric vector.
 }
@@ -40,5 +40,5 @@ summ(x = rnorm(100, 50000, 5000),
      rnd = -3, prettify = T)
 }
 \seealso{
-\code{\link[base]{round}}, \code{\link[base]{quantile}}
+\code{\link[base]{round}}, \code{\link[stats]{quantile}}
 }

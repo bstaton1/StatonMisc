@@ -1,12 +1,13 @@
 #' Convert Lognormal SD to CV
 #'
 #' This function is used to convert the lognormal standard deviation
-#' of a random variable to the coefficient of variation, using a simple transformation
+#' of a random variable to the coefficient of variation
+#' using a simple transformation.
 #'
-#' @param cv a numeric vector, possibly length > 1, containing the lognormal SD to convert
+#' @param cv A numeric vector, possibly length > 1, containing the lognormal SD you wish to convert.
 #'
-#' @return a numeric vector with the same length as \code{cv},
-#'   the coefficient of variation
+#' @return A numeric vector with the same length as \code{cv},
+#'   the coefficient of variation.
 #'
 #' @seealso \code{\link{cv2sig}}
 #'

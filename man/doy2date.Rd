@@ -2,30 +2,29 @@
 % Please edit documentation in R/doy2date.R
 \name{doy2date}
 \alias{doy2date}
-\title{Convert Date to DOY}
+\title{Convert DOYs to Dates}
 \usage{
 doy2date(doy, year, leading_zero = FALSE, include_year = TRUE)
 }
 \arguments{
-\item{doy}{a numeric vector of length 1 specifying the day of the year to convert}
+\item{doy}{A numeric vector of length 1 specifying the day of the year to convert.}
 
-\item{year}{a numeric vector of length 1 specifying the year \code{doy} corresponds to.
-This is necessary to account for leap years}
+\item{year}{A numeric vector of length 1 specifying the year \code{doy} corresponds to.
+This is necessary to account for leap years.}
 
-\item{leading_zero}{logical: do you wish to insert a zero in front of the month and day in the date
-if they are just single numbers (e.g., \code{"6/1"} would become \code{"06/01"} if set to TRUE).
-Defaults to \code{FALSE}}
+\item{leading_zero}{logical: Do you wish to insert a zero in front of the month and day in the date
+if they are just single numbers (e.g., \code{"6/1"} would become \code{"06/01"} if set to \code{TRUE}).
+Defaults to \code{FALSE}.}
 
-\item{include_year}{logical: do you wish to include the year in the output?
-Defaults to \code{TRUE}}
+\item{include_year}{logical: Do you wish to include the year in the output?
+Defaults to \code{TRUE}.}
 }
 \value{
-return a character vector containing the converted dates.
+A character vector containing the converted dates.
 }
 \description{
 This function is used to convert a vector of dates formated as M-D-YYYY
-to a vector of days of the year. The calculation automatically takes
-leap years into account.
+to a vector of days of the year, taking leap years into account.
 }
 \examples{
 doy2date(51, 2016)

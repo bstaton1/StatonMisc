@@ -2,22 +2,22 @@
 % Please edit documentation in R/which_closest.R
 \name{which_closest}
 \alias{which_closest}
-\title{Find index of element closest to a number}
+\title{Find Index of Closest Element}
 \usage{
 which_closest(x, y)
 }
 \arguments{
-\item{x}{a numeric vector with length > 1 from which to find an element index}
+\item{x}{A numeric vector with length > 1 from which to find an element index.}
 
-\item{y}{a numeric vector with length == 1, the "close to" value}
+\item{y}{A numeric vector with length == 1, the "close to" value.}
 }
 \value{
 a numeric vector with length 1, which represents the index of \code{x}
-  that is closest to the value \code{y}
+  that is closest to the value \code{y}.
 }
 \description{
-This function is used to find index of the element of a vector \code{x} with the value
-closest to \code{y}, regardless of if it is greater or less than \code{y}
+Used to find the index of the element of a vector \code{x} with the value
+closest to \code{y}, regardless of whether it is greater or less than \code{y}.
 }
 \examples{
 which_closest(x = 5:10, y = 7)

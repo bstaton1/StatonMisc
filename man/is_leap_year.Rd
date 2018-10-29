@@ -10,11 +10,12 @@ is_leap_year(year)
 \item{date}{a numeric vector of length >= 1 containing the years to test}
 }
 \value{
-a logical vector indicating whether each year is a leap year (TRUE if so, FALSE if not).
+a logical vector indicating whether each year is a leap year (\code{TRUE} if so, \code{FALSE} if not).
 }
 \description{
-This function is used to determine if each element in a vector of years is
-a leap year.
+This function is used to determine if each element
+in a vector of years is a leap year. It is a hidden function
+in this package.
 }
 \examples{
 is_leap_year(2016:2020)

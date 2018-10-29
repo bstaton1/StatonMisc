@@ -3,6 +3,8 @@
 export(cv2sig)
 export(date2doy)
 export(doy2date)
+export(expit)
+export(logit)
 export(prettify)
 export(sig2cv)
 export(summ)

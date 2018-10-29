@@ -7,19 +7,19 @@
 dec_time2nice_time(dec_times, clock = "12hr")
 }
 \arguments{
-\item{dec_times}{a numeric vector with length >= 1,
+\item{dec_times}{A numeric vector with length >= 1,
 and values in the interval [0,24].}
 
-\item{clock}{a character vector specifying if you want a 12-hour clock
-(\code{"12hr"}) or a 24-hour clock(i.e., miliary time; \code{"24hr"})}
+\item{clock}{A character vector specifying if you want a 12-hour clock
+(\code{"12hr"}) or a 24-hour clock(i.e., miliary time; \code{"24hr"}).}
 }
 \value{
-a character vector with the converted times.
+A character vector with the converted times.
   If \code{clock == "12hr"}, either \code{"AM"} or \code{"PM"}
   will be included at the end of the character string in each element.
 }
 \description{
-Goes from hours.fraction to hours:minutes.
+Goes from hours.fraction format to hours:minutes.
 }
 \note{
 Any cases where \code{dec_times == 0 | dec_times == 24} will be

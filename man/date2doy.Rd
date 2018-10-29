@@ -2,13 +2,13 @@
 % Please edit documentation in R/date2doy.R
 \name{date2doy}
 \alias{date2doy}
-\title{Convert Date to DOY}
+\title{Convert Dates to DOYs}
 \usage{
 date2doy(date)
 }
 \arguments{
-\item{date}{a character vector containing the date to convert. June 1 2018 would be \code{"6/1/2018"},
-and December 25 1975 would be \code{"12/25/1975"}. Currently, this function
+\item{date}{a character vector containing the date to convert. June 1, 2018 would be \code{"6/1/2018"},
+and December 25, 1975 would be \code{"12/25/1975"}. Currently, this function
 can only use dates from a single year.}
 }
 \value{
@@ -16,8 +16,7 @@ a numeric vector containing the DOY that was converted.
 }
 \description{
 This function is used to convert a vector of dates formated as M-D-YYYY
-to a vector of days of the year. The calculation automatically takes
-leap years into account.
+to a vector of days of the year, taking leap years into account.
 }
 \examples{
 date2doy("6/12/2016")

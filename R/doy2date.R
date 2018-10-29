@@ -1,19 +1,18 @@
-#' Convert Date to DOY
+#' Convert DOYs to Dates
 #'
 #' This function is used to convert a vector of dates formated as M-D-YYYY
-#' to a vector of days of the year. The calculation automatically takes
-#' leap years into account.
+#' to a vector of days of the year, taking leap years into account.
 #'
-#' @param doy a numeric vector of length 1 specifying the day of the year to convert
-#' @param year a numeric vector of length 1 specifying the year \code{doy} corresponds to.
-#'   This is necessary to account for leap years
-#' @param leading_zero logical: do you wish to insert a zero in front of the month and day in the date
-#'   if they are just single numbers (e.g., \code{"6/1"} would become \code{"06/01"} if set to TRUE).
-#'   Defaults to \code{FALSE}
-#' @param include_year logical: do you wish to include the year in the output?
-#'   Defaults to \code{TRUE}
+#' @param doy A numeric vector of length 1 specifying the day of the year to convert.
+#' @param year A numeric vector of length 1 specifying the year \code{doy} corresponds to.
+#'   This is necessary to account for leap years.
+#' @param leading_zero logical: Do you wish to insert a zero in front of the month and day in the date
+#'   if they are just single numbers (e.g., \code{"6/1"} would become \code{"06/01"} if set to \code{TRUE}).
+#'   Defaults to \code{FALSE}.
+#' @param include_year logical: Do you wish to include the year in the output?
+#'   Defaults to \code{TRUE}.
 #'
-#' @return return a character vector containing the converted dates.
+#' @return A character vector containing the converted dates.
 #'
 #' @seealso \code{\link{date2doy}}
 #'
