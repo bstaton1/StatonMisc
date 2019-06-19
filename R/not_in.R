@@ -2,12 +2,14 @@
 #'
 #' Sometimes is nice to have a shortcut.
 #'
+#' @name grapes_not_in_grapes
+#' @aliases not_in
 #' @param x A vector.
 #' @param y A vector.
 #'
-#' @details the infix operator \code{\%in\%} tests whether elements in one vector
-#'   are also found in another vector. To negate this test, previously needed to wrap
-#'   the whole statement in parentheses. This helps you get around this hassle.
+#' @details The infix operator \code{\%in\%} tests whether elements in one vector
+#'   are also found in another vector. To negate this test, users previously needed to wrap
+#'   the whole statement in parentheses. This helps to get around this hassle.
 #'
 #' @examples
 #' v = c("a", "b", "c"); "x" %!in% v
