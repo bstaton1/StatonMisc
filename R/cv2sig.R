@@ -1,6 +1,6 @@
 #' Convert CV to Lognormal SD
 #'
-#' This function is used to convert the coefficient of variation of a
+#' Used to convert the coefficient of variation of a
 #' random variable to the lognormal standard deviation,
 #' using a simple transformation.
 #'
