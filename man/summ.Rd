@@ -2,7 +2,7 @@
 % Please edit documentation in R/summ.R
 \name{summ}
 \alias{summ}
-\title{Summarize a Vector of Random Quantities}
+\title{Summarize a Vector of Quantities}
 \usage{
 summ(x, p = c(0.5, 0.025, 0.975), rnd = NULL, na.rm = F,
   prettify = FALSE)
@@ -16,7 +16,7 @@ The quantile points requested. Defaults to \code{c(0.5, 0.025, 0.975)}.}
 \item{rnd}{A numeric vector of length == 1. The rounding specification.
 Defaults to \code{NULL}, i.e., no rounding.}
 
-\item{na.rm}{logical. Do you wish to remove NAs before calculating summary statistics?
+\item{na.rm}{logical. Do you wish to remove \code{NA} elements before calculating summary statistics?
 Defaults to \code{FALSE}.}
 
 \item{prettify}{logical. Do you wish to insert commas in the output? If so,

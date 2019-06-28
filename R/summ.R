@@ -1,4 +1,4 @@
-#' Summarize a Vector of Random Quantities
+#' Summarize a Vector of Quantities
 #'
 #' This function is a wrapper for \code{mean()}, \code{quantile()},
 #' \code{sd}, \code{round()}, and \code{prettyNum()}. So it can easily
@@ -10,7 +10,7 @@
 #'   The quantile points requested. Defaults to \code{c(0.5, 0.025, 0.975)}.
 #' @param rnd A numeric vector of length == 1. The rounding specification.
 #'   Defaults to \code{NULL}, i.e., no rounding.
-#' @param na.rm logical. Do you wish to remove NAs before calculating summary statistics?
+#' @param na.rm logical. Do you wish to remove \code{NA} elements before calculating summary statistics?
 #'   Defaults to \code{FALSE}.
 #' @param prettify logical. Do you wish to insert commas in the output? If so,
 #'   it will be coerced to a character vector. Defaults to \code{FALSE}.
