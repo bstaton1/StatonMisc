@@ -14,12 +14,14 @@ in logit space to convert to the [0,1] scale.}
 A numeric vector with the same length as \code{x} containing the inverse-logit of \code{x}.
 }
 \description{
-This function performs the inverse-logit transformation.
+Performs the inverse-logit transformation.
 See the details below for exactly what this means.
 }
 \details{
 The inverse logit tranformation turns any real number (negative to positive infinity) to
   a number on the [0,1] scale (e.g., the probability scale).
+  I can never remember which transformation the built-in \code{qlogis} or \code{plogis} functions
+  do, so I wrote my own that are more in their names.
 }
 \examples{
 expit(x = 1)

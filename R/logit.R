@@ -1,6 +1,6 @@
 #' Perform the Logit Tranformation
 #'
-#' This function performs the logit transformation.
+#' Performs the logit transformation.
 #' See the details below for exactly what this means.
 #'
 #' @param x A numeric vector, possibly length > 1, containing the number
@@ -11,6 +11,8 @@
 #' @details The logit tranformation turns a number in the interval [0,1] (e.g., the probability scale)
 #'   to logit-space, which ranges from negative to positive infinity. It is also known as
 #'   the log-odds transformation, and is a commonly used link function in GLMs using binary data.
+#'   I can never remember which transformation the built-in \code{qlogis} or \code{plogis} functions
+#'   do, so I wrote my own that are more in their names.
 #'
 #' @seealso \code{\link{expit}}
 #'
