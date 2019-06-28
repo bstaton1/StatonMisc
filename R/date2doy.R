@@ -1,19 +1,20 @@
 #' Convert Dates to DOYs
 #'
-#' This function is used to convert a vector of dates formated as M-D-YYYY
-#' to a vector of days of the year, taking leap years into account.
+#' Used to convert a vector of dates formated as M-D-YYYY
+#' to a vector of days of the year, while taking leap years into account.
 #'
 #' @param date a character vector containing the date to convert. June 1, 2018 would be \code{"6/1/2018"},
-#'   and December 25, 1975 would be \code{"12/25/1975"}. Currently, this function
-#'   can only use dates from a single year.
+#'   and December 25, 1975 would be \code{"12/25/1975"}. Other date formats are not currently accepted
+#'   although dates from more than one year can be included.
 #'
-#' @return a numeric vector containing the DOY that was converted.
+#' @return a numeric vector containing the DOY that was converted from M-D-YYYY format.
 #'
 #' @seealso \code{\link{doy2date}}
 #'
 #' @examples
 #' date2doy("6/12/2016")
 #' date2doy(c("6/12/2017", "6/19/2017"))
+#' date2doy(c("6/1/2016", "6/1/2017"))
 #'
 #' @export
 
@@ -25,7 +26,7 @@ date2doy = function(date) {
                           month = as.numeric(date.split[,1]),
                           year = as.numeric(date.split[,3]))
 
-  year = unique(date.split$year)
+  year = date.split$year
 
   # make keys
   # leap year key
@@ -44,14 +45,12 @@ date2doy = function(date) {
   day.key = as.integer(substr(dates, 4, 5))
   common.key = data.frame(day = day.key, month = month.key, doy = 1:365)
 
-  if (is_leap_year(year)) key = leap.key else key = common.key
-
   n = nrow(date.split)
   doys = numeric(n)
   for (i in 1:n) {
+    if (is_leap_year(year[i])) key = leap.key else key = common.key
     doys[i] = key$doy[key$month == date.split$month[i] & key$day == date.split$day[i]]
   }
 
   return(doys)
 }
-

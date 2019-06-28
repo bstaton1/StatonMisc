@@ -7,10 +7,12 @@
 doy2date(doy, year, leading_zero = FALSE, include_year = TRUE)
 }
 \arguments{
-\item{doy}{A numeric vector of length 1 specifying the day of the year to convert.}
+\item{doy}{A numeric vector specifying the day of the year to convert.}
 
-\item{year}{A numeric vector of length 1 specifying the year \code{doy} corresponds to.
-This is necessary to account for leap years.}
+\item{year}{A numeric vector specifying the year \code{doy} corresponds to.
+This is necessary to account for leap years. If only one element is provided
+it will be assumed that year corresponds to all DOY values provided to \code{doy}.
+Otherwise, \code{year} and \code{doy} must be the same length, and they will be matched elementwise.}
 
 \item{leading_zero}{logical: Do you wish to insert a zero in front of the month and day in the date
 if they are just single numbers (e.g., \code{"6/1"} would become \code{"06/01"} if set to \code{TRUE}).
@@ -23,11 +25,12 @@ Defaults to \code{TRUE}.}
 A character vector containing the converted dates.
 }
 \description{
-This function is used to convert a vector of dates formated as M-D-YYYY
-to a vector of days of the year, taking leap years into account.
+Used to convert a vector of days of the year into
+a calendar date format, taking leap years into account.
 }
 \examples{
-doy2date(51, 2016)
+doy2date(doy = c(151,152), year = 2016)
+doy2date(doy = c(151,151), year = c(2015, 2016))
 date2doy(51, 2017, TRUE)
 
 }
