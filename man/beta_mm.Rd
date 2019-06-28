@@ -4,14 +4,17 @@
 \alias{beta_mm}
 \title{Obtain the shape parameters of a beta distribution}
 \usage{
-beta_mm(p)
+beta_mm(p, na.rm = F)
 }
 \arguments{
 \item{p}{a vector of iid beta random variables, for which you want
 to obtain the parameters of the beta distribution from which they
 are drawn}
+
+\item{na.rm}{logical. Do you wish to remove NA elements before calculating mean and variance?
+Defaults to \code{FALSE}.}
 }
 \description{
-Use the method of moments to obtain the \code{shape1} and \code{shape2}
+Use the method of moments to obtain the \code{shape1} (alpha) and \code{shape2} (beta)
 parameters when provided a vector assumed iid beta random variables.
 }
