@@ -13,10 +13,13 @@ is_leap_year(year)
 a logical vector indicating whether each year is a leap year (\code{TRUE} if so, \code{FALSE} if not).
 }
 \description{
-This function is used to determine if each element
-in a vector of years is a leap year. It is a hidden function
-in this package.
+Used to determine if each element in a vector of years is a leap year.
+}
+\details{
+a year is considered a leap year if it is divisible by 4 and not divisible by 100.
+  The exception is years that are divisible by 400 are also considered leap years.
 }
 \examples{
 is_leap_year(2016:2020)
+
 }
