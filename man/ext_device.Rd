@@ -14,7 +14,7 @@ ext_device(h = 7, w = 7, title = NULL)
 \item{title}{the desired title of the plotting window}
 }
 \description{
-This is a platform-flexible function for creating a new plotting device.
+A platform-flexible function for creating a new plotting device.
 It functions just like \code{windows()} on Windows OS, \code{quartz()} on Mac OS,
 and \code{x11()} on Linux OS.
 }

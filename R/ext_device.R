@@ -1,6 +1,6 @@
 #' Create a new external plotting device
 #'
-#' This is a platform-flexible function for creating a new plotting device.
+#' A platform-flexible function for creating a new plotting device.
 #' It functions just like \code{windows()} on Windows OS, \code{quartz()} on Mac OS,
 #' and \code{x11()} on Linux OS.
 #'
@@ -19,7 +19,7 @@ ext_device = function(h = 7, w = 7, title = NULL) {
   } else if (.Platform$OS.type == "unix") {
     os = "unix"
   } else {
-    stop("Unknown OS")
+    stop("Unknown OS; cannot select the appropriate graphics device")
   }
 
   if (os == "win") windows(h = h, w = w, title = title)
