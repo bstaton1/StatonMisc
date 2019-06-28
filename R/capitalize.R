@@ -11,11 +11,11 @@
 
 capitalize = function(x) {
   # check for appropriate class
-  if (!is.character(x)) stop("x must be a character")
+  if (!is.character(x)) stop("x must be of class 'character'")
   # extract the first letter
   first = substr(x, 1, 1)
   #extract the last bit
   last = substr(x, 2, nchar(x))
   # capitalize the first and paste on last bit
-  paste(toupper(first), last, sep = "")
+  paste0(toupper(first), last)
 }
