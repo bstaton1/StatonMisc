@@ -1,6 +1,6 @@
 #' Add commas to a numeric vector
 #'
-#' This function is a wrapper for \code{prettyNum()}, and is currently used only to
+#' A wrapper for \code{prettyNum()}, and is currently used only to
 #' add a comma to separate thousands places.
 #'
 #' @param x a numeric vector to be prettified.
