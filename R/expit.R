@@ -11,7 +11,7 @@
 #' @details The inverse logit tranformation turns any real number (negative to positive infinity) to
 #'   a number on the [0,1] scale (e.g., the probability scale).
 #'   I can never remember which transformation the built-in \code{qlogis} or \code{plogis} functions
-#'   do, so I wrote my own that are more in their names.
+#'   do, so I wrote my own that are more explicit in their names.
 #'
 #' @seealso \code{\link{logit}}
 #'
