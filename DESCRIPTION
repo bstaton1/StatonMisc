@@ -3,10 +3,10 @@ Title: Common Functions Used by B.A. Staton
 Version: 0.1.1
 Authors@R: person("Benjamin", "Staton", email = "statonbe@gmail.com", role = c("aut", "cre"))
 Description: Contains a somewhat random assortment of functions
-    that are commonly used in code written by Ben Staton, including his other packages
-    and public and non-public code. It includes mostly utility-type functions for tasks like
+    that are commonly used in code written by B. Staton, including his other packages.
+    It includes mostly shortcut-type functions for tasks like
     transforming dates (from MM/DD/YYYY to DOY and back) and
-    basic data transformations (cv2sig, sig2cv, logis, expit, etc.).
+    basic data transformations (cv2sig, sig2cv, logit, expit, etc.).
 Depends: R (>= 3.0.0)
 License: GPL-2
 Encoding: UTF-8
