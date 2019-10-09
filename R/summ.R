@@ -34,7 +34,7 @@ summ = function(x,
   # calculate the main summary
   out = c(mean = mean(x, na.rm = na.rm),
           sd = sd(x, na.rm = na.rm),
-          quantile(x, p)
+          quantile(x, p, na.rm = na.rm)
   )
 
   # if rounding, do it
