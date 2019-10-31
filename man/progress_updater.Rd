@@ -2,9 +2,9 @@
 % Please edit documentation in R/progress_updater.R
 \name{progress_updater}
 \alias{progress_updater}
-\title{Print a progress indicator to console}
+\title{Print a basic progress indicator to console}
 \usage{
-progress_updater(i, n, grp = NULL, rnd = 0)
+progress_updater(i, n, grp = NULL, rnd = 0, indent = 0)
 }
 \arguments{
 \item{i}{numeric vector of length == 1. The current iteration value}
@@ -15,14 +15,18 @@ progress_updater(i, n, grp = NULL, rnd = 0)
 in parentheses following the printed percent. Defaults to \code{NULL}, in which case no additional
 group identifier is printed}
 
-\item{rnd}{numeric vector of length == 1. Controls the number of decimal values in the printed percent.
+\item{rnd}{numeric vector of length == 1. The number of decimal values in the printed percent.
 Defaults to \code{rnd = 0}, in which case only the integer value percents will be printed.
 Set to \code{rnd = 1} to obtain tenths of a percent, \code{rnd = 2} to obtain hundredths, etc.}
+
+\item{indent}{numeric vector of length == 1. The number of space characters to indent the printed percent.}
+}
+\value{
+A printed percent to the console (i/n * 100)
 }
 \description{
 Include this function in a loop or other calculation that iterates over elements
-in which the total number of elements is known to obtain an indication of what percentage
-of the calculation is completed
+in which both the current and total number of elements is known.
 }
 \examples{
  junk = sapply(1:15, function(i) {progress_updater(i, 15, rnd = 1); Sys.sleep(0.2)})

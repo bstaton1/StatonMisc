@@ -1,13 +1,15 @@
 Package: StatonMisc
-Title: Common Functions Used by B.A. Staton
+Title: Common Functions Used in B. Staton's Code
 Version: 0.1.3
 Authors@R: person("Benjamin", "Staton", email = "statonbe@gmail.com", role = c("aut", "cre"))
 Description: Contains a somewhat random assortment of functions
-    that are commonly used in code written by B. Staton, including his other packages.
+    that are commonly used my code including my other packages.
     It includes mostly shortcut-type functions for tasks like
     transforming dates (from MM/DD/YYYY to DOY and back) and
     basic data transformations (cv2sig, sig2cv, logit, expit, etc.).
 Depends: R (>= 3.0.0)
+Imports:
+    stringr (>= 1.3.1)
 License: MIT
 Encoding: UTF-8
 LazyData: true
