@@ -3,7 +3,6 @@
 \docType{package}
 \name{StatonMisc}
 \alias{StatonMisc}
-\alias{StatonMisc-package}
 \title{StatonMisc: Common Functions Used by B.A. Staton}
 \description{
 This package contains a somewhat random assortment of functions that are

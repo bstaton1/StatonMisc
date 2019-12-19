@@ -4,8 +4,7 @@
 \alias{list_out}
 \title{List vector elements in a nice format}
 \usage{
-list_out(x, final = NULL, per_line = 1e+06, wrap = NULL,
-  indent = NULL)
+list_out(x, final = NULL, per_line = 1e+06, wrap = NULL, indent = NULL)
 }
 \arguments{
 \item{x}{a vector object, will be coerced to a character class}

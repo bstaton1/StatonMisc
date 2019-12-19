@@ -4,8 +4,7 @@
 \alias{string_in_dir}
 \title{Find string occurrences in files within a directory}
 \usage{
-string_in_dir(path = NULL, string, print_negs = F, print_lines = F,
-  ...)
+string_in_dir(path = NULL, string, print_negs = F, print_lines = F, ...)
 }
 \arguments{
 \item{path}{a character string (length == 1) pointing to the location of the directory to search.

@@ -4,8 +4,7 @@
 \alias{summ}
 \title{Summarize a Vector of Quantities}
 \usage{
-summ(x, p = c(0.5, 0.025, 0.975), rnd = NULL, na.rm = F,
-  prettify = FALSE)
+summ(x, p = c(0.5, 0.025, 0.975), rnd = NULL, na.rm = F, prettify = FALSE)
 }
 \arguments{
 \item{x}{A numeric vector with length > 1. It can have \code{NA} elements.}
