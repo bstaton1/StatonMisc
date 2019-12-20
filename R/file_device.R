@@ -72,7 +72,7 @@ file_device = function(file, width = 5, height = 5, res = 600) {
   w_arg = paste0("width = ", width, " * res")
 
   # build the last part of the function text (include res if not pdf)
-  if (fun_name != "pdf") last = paste0("res = ", res, ")")
+  if (fun_name != "pdf") last = paste0("res = ", res, ")") else last = ")"
 
   # build the text to parse
   parse_me = paste(first, h_arg, w_arg, last, sep = ", ")
