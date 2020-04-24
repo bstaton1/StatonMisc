@@ -2,33 +2,38 @@
 % Please edit documentation in R/file_device.R
 \name{file_device}
 \alias{file_device}
-\title{Create a graphics device file based on file extension}
+\title{Create a graphics device file based on supplied file extension}
 \usage{
-file_device(file, width = 5, height = 5, res = 600)
+file_device(filename, width = 5, height = 5, res = 600, ...)
 }
 \arguments{
-\item{file}{the name of the output file. Can be a path,
+\item{filename}{the name of the output file. Can be a path
 but must contain a file extension at the end (e.g., \code{"path/to/dir/file.png"})}
 
 \item{width}{the width of the device, in inches. Defaults to 5}
 
 \item{height}{the height of the device, in inches. Defaults to 5}
 
-\item{res}{the resolution of the device, in pixels per inch. Defaults to 600}
+\item{res}{the resolution of the device, in pixels per inch. Defaults to 600. Has no effect if the extension is \code{".pdf"} or \code{".eps"}}
+
+\item{...}{optional arguments passed to the graphics device generating function (e.g., \code{\link[grDevices]{png}})}
 }
 \description{
-Wouldn't it be nice to switch between (e.g.,) pdf and jpg
-files by simply changing the file extension?
+General purpose graphics devices saved to files, where the file type is determined by the file name
 }
 \details{
-Accepted file extentions include:
+Accepted file extensions include:
 \itemize{
-  \item \code{".pdf"}
-  \item \code{".png"}
-  \item \code{".bmp"}
-  \item \code{".jpg"} or \code{".jpeg"}
-  \item \code{".tif"} or \code{".tiff"}
+  \item \code{".pdf"} (calls \code{\link[grDevices]{pdf}})
+  \item \code{".png"} (calls \code{\link[grDevices]{png}})
+  \item \code{".bmp"} (calls \code{\link[grDevices]{bmp}})
+  \item \code{".jpg"} (or \code{".jpeg"}, both call \code{\link[grDevices]{jpeg}}))
+  \item \code{".tif"} (or \code{".tiff"}, both call \code{\link[grDevices]{tiff}}))
+  \item \code{".eps"} (calls \code{\link[grDevices]{cairo_ps}})
 }
+}
+\note{
+A call to \code{\link[grDevices]{dev.off}} is still required after the plotting code (see examples).
 }
 \examples{
 \dontrun{
@@ -43,8 +48,4 @@ hist(rnorm(1000), col = "grey")
 boxplot(rnorm(1000), col = "grey")
 dev.off()
 }
-}
-\seealso{
-\code{\link[grDevices]{pdf}}, \code{\link[grDevices]{jpeg}},
-  \code{\link[grDevices]{png}}, \code{\link[grDevices]{tiff}}, \code{\link[grDevices]{bmp}}
 }
