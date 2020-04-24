@@ -1,6 +1,6 @@
 Package: StatonMisc
 Title: Common Functions Used in B. Staton's Code
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: person("Benjamin", "Staton", email = "statonbe@gmail.com", role = c("aut", "cre"))
 Description: Contains a somewhat random assortment of functions
     that are commonly used my code including my other packages.
