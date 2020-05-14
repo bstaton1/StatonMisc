@@ -73,6 +73,11 @@ file_device = function(filename, width = 5, height = 5, res = 600, ...) {
     width = width * res
   )
 
+  # change filename argument to file argument if using pdf output
+  if (file_type == "pdf") {
+    names(args_list)[1] = "file"
+  }
+
   # add res to args if necessary
   if (file_type %in% res_devs) args_list = append(args_list, list(res = res))
 
